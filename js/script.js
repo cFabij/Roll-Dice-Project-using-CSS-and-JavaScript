@@ -15,6 +15,9 @@ const randomDice = () => {
 
 const rollDice = random => {
 
+// change animation completely to js depending on what the current face of the dice is
+// and where it has to move to
+
     dice.style.animation = 'rolling 4s';
 
     setTimeout(() => {
@@ -50,7 +53,7 @@ const rollDice = random => {
 
         dice.style.animation = 'none';
 
-    }, 4050);
+    }, 1000); // 4050
 
 }
 
